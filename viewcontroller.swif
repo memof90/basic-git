@@ -2,12 +2,14 @@ import Uikit
 
 class ViewController: UIViewController {
 
+    let myName = "Guillermo"
+
    override func viewDidload() {
         super.viewDidload()
     }
 
-    func account() {
-        
+    func accountNumber() {
+        print("my name" + myName)
     }
 
 }
