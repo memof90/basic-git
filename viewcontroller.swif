@@ -3,13 +3,14 @@ import Uikit
 class ViewController: UIViewController {
 
     let myName = "Guillermo"
+    let color = "green"
 
    override func viewDidload() {
         super.viewDidload()
     }
 
     func accountNumber() {
-        print("my name" + myName)
+        print("my name" + myName + green)
     }
 
 }
