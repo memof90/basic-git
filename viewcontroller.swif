@@ -3,11 +3,13 @@ import Uikit
 class ViewController: UIViewController {
 
     let myName = "Guillermo"
+    let color = "blue"
     let favoriteFood = "Buguger"
-    let color = "green"
 
    override func viewDidload() {
         super.viewDidload()
+
+        myFavoriteFood(foodName: "burger")
     }
 
     func myPersonalDescription() -> String {
