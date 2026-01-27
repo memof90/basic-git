@@ -8,6 +8,8 @@ class ViewController: UIViewController {
 
    override func viewDidload() {
         super.viewDidload()
+
+        myFavoriteFood(foodName: "burger")
     }
 
     func myPersonalDescription() -> String {
