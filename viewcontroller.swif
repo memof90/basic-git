@@ -10,7 +10,8 @@ class ViewController: UIViewController {
         super.viewDidload()
     }
 
-    func accountNumber() {
-        print("my name" + myName + green + favoriteFood)
+    func myPersonalDescription() -> String {
+        
+       return "my name" + myName + green + favoriteFood
     }
 }
