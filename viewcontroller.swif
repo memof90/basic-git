@@ -4,13 +4,18 @@ class ViewController: UIViewController {
 
     let myName = "Guillermo"
     let color = "blue"
+    let favoriteFood = "Buguger"
 
    override func viewDidload() {
         super.viewDidload()
     }
 
-    func myPersonalInformation() {
-        print("my name" + myName + green)
+    func myPersonalDescription() -> String {
+        
+       return "my name" + myName + green + favoriteFood
     }
 
+    func myFavoriteFood(foodName: String) {
+        print(foodName)
+    }
 }
