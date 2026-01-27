@@ -14,4 +14,8 @@ class ViewController: UIViewController {
         
        return "my name" + myName + green + favoriteFood
     }
+
+    func myFavoriteFood(foodName: String) {
+        print(foodName)
+    }
 }
