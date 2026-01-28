@@ -2,22 +2,27 @@ import Uikit
 
 class ViewController: UIViewController {
 
-    let myName = "Guillermo"
-    let color = "blue"
-    let favoriteFood = "Buguger"
+    let myPersonalInformation = InformationModel(
+        myName: "Guillermo",
+        color: "yellow",
+        favoriteFood: "Burger"
+    )
 
-   override func viewDidload() {
-        super.viewDidload()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        myFavoriteFood(foodName: "burger")
+        myFavoriteFood(foodName: myPersonalInformation.favoriteFood)
     }
 
     func myPersonalDescription() -> String {
-        
-       return "my name" + myName + green + favoriteFood
+        return "My name is \(myPersonalInformation.myName), my favorite color is \(myPersonalInformation.color), and my favorite food is \(myPersonalInformation.favoriteFood)."
     }
 
     func myFavoriteFood(foodName: String) {
         print(foodName)
+    }
+
+    func myFavoriteColor(color: String) -> String {
+        return color
     }
 }
